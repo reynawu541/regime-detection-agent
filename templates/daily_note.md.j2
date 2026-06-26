@@ -1,0 +1,55 @@
+# Daily market regime research note — {{ run_date }}
+
+**{{ headline }}**
+
+## Current regime
+
+- Regime **{{ current_regime }}** of {{ n_states }} (states are numbered 0 = calmest ... {{ n_states - 1 }} = most turbulent)
+- Model: Gaussian HMM (`hmmlearn`), state count chosen by BIC over candidates {{ candidate_n_states }}
+- Analyst narrative source: {{ analyst_source }}
+{% if rerun_note %}
+- Note: {{ rerun_note }}
+{% endif %}
+
+## Regime comparison
+
+{{ regime_summary }}
+
+## Regime statistics
+
+{{ stats_table }}
+
+![Benchmark price shaded by detected regime]({{ chart_filename }})
+
+## Per-regime notes
+
+{% for state, note in per_regime_notes.items() %}
+- **Regime {{ state }}**: {{ note }}
+{% endfor %}
+
+## Method cross-check
+
+- HMM vs GMM label agreement: {{ "%.0f"|format(hmm_vs_gmm * 100) }}%
+- HMM vs KMeans label agreement: {{ "%.0f"|format(hmm_vs_kmeans * 100) }}%
+
+## Historical event sanity check
+
+{% if event_check %}
+{% for e in event_check %}
+- {{ e.event_label }} ({{ e.event_date }}): nearest trading day {{ e.nearest_trading_day }} was regime {{ e.regime }}
+{% endfor %}
+{% else %}
+- No configured reference events fall within the current data range.
+{% endif %}
+
+## Caveats
+
+{{ caveats }}
+
+## Outlook
+
+{{ outlook }}
+
+---
+
+*Generated automatically by the regime-detection-agent pipeline on {{ generated_at }}. Universe: {{ benchmark }} + {{ sector_etfs }}. This note is end-of-day, backward-looking, and not investment advice.*
