@@ -1,0 +1,77 @@
+{
+  "run_date": "2026-08-05",
+  "current_regime": 2,
+  "n_states": 4,
+  "regime_stats": {
+    "0": {
+      "n_days": 2049,
+      "share_of_days": 0.5064260998517054,
+      "ann_return": 0.17674215412048777,
+      "ann_vol": 0.10952814696785755,
+      "sharpe": 1.613668805812583,
+      "max_drawdown": -0.09686954795456315,
+      "skew": -0.3547421203180471,
+      "kurtosis": 1.715945679451802,
+      "n_episodes": 12,
+      "avg_episode_days": 170.75
+    },
+    "1": {
+      "n_days": 772,
+      "share_of_days": 0.1908057340583292,
+      "ann_return": 0.16874479159613132,
+      "ann_vol": 0.12149301533136908,
+      "sharpe": 1.3889258665272588,
+      "max_drawdown": -0.09974334014309028,
+      "skew": -0.4361104761543868,
+      "kurtosis": 1.0340886951958952,
+      "n_episodes": 9,
+      "avg_episode_days": 85.77777777777777
+    },
+    "2": {
+      "n_days": 934,
+      "share_of_days": 0.23084527928818585,
+      "ann_return": 0.06010690811738573,
+      "ann_vol": 0.22203941388529375,
+      "sharpe": 0.27070377761147013,
+      "max_drawdown": -0.22094837080315277,
+      "skew": 0.13870568802719013,
+      "kurtosis": 4.147485818218955,
+      "n_episodes": 15,
+      "avg_episode_days": 62.266666666666666
+    },
+    "3": {
+      "n_days": 291,
+      "share_of_days": 0.07192288680177954,
+      "ann_return": 0.3112227825035151,
+      "ann_vol": 0.34691696561358726,
+      "sharpe": 0.8971102982901388,
+      "max_drawdown": -0.24887973312937917,
+      "skew": -0.5653841103053279,
+      "kurtosis": 5.376341489359819,
+      "n_episodes": 4,
+      "avg_episode_days": 72.75
+    }
+  },
+  "separation_pvalue": 0.5169220908224439,
+  "flags": [],
+  "method_agreement": {
+    "hmm_vs_gmm": 0.4644092931290163,
+    "hmm_vs_kmeans": 0.45402867029164606
+  },
+  "event_check": [
+    {
+      "event_date": "2020-02-19",
+      "event_label": "COVID crash onset",
+      "nearest_trading_day": "2020-02-19",
+      "regime": 1
+    },
+    {
+      "event_date": "2022-01-01",
+      "event_label": "2022 rate-hike selloff",
+      "nearest_trading_day": "2021-12-31",
+      "regime": 1
+    }
+  ],
+  "analyst_source": "deterministic",
+  "errors": []
+}
