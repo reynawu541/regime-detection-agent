@@ -1,0 +1,81 @@
+{
+  "run_date": "2026-10-21",
+  "current_regime": 0,
+  "n_states": 4,
+  "regime_stats": {
+    "0": {
+      "n_days": 1573,
+      "share_of_days": 0.38375213466699193,
+      "ann_return": 0.2209408162038012,
+      "ann_vol": 0.09703465024116739,
+      "sharpe": 2.276927011687894,
+      "max_drawdown": -0.07582707339588779,
+      "skew": -0.30928416438505635,
+      "kurtosis": 1.4092997787460364,
+      "n_episodes": 17,
+      "avg_episode_days": 92.52941176470588
+    },
+    "1": {
+      "n_days": 1004,
+      "share_of_days": 0.24493778970480606,
+      "ann_return": 0.13975882127329747,
+      "ann_vol": 0.11804478454528461,
+      "sharpe": 1.1839474468241575,
+      "max_drawdown": -0.09686980478104168,
+      "skew": -0.30268489177678937,
+      "kurtosis": 0.9844912570582061,
+      "n_episodes": 4,
+      "avg_episode_days": 251.0
+    },
+    "2": {
+      "n_days": 1190,
+      "share_of_days": 0.2903147109050988,
+      "ann_return": 0.03898396379918664,
+      "ann_vol": 0.19722669125932557,
+      "sharpe": 0.1976606895865234,
+      "max_drawdown": -0.3195455326339892,
+      "skew": -0.3378790482071005,
+      "kurtosis": 1.4423992930273015,
+      "n_episodes": 21,
+      "avg_episode_days": 56.666666666666664
+    },
+    "3": {
+      "n_days": 332,
+      "share_of_days": 0.0809953647231032,
+      "ann_return": 0.3176941961589208,
+      "ann_vol": 0.3570779336381402,
+      "sharpe": 0.8897054850800987,
+      "max_drawdown": -0.28319056759144723,
+      "skew": -0.20101832262073643,
+      "kurtosis": 5.139243393157699,
+      "n_episodes": 6,
+      "avg_episode_days": 55.333333333333336
+    }
+  },
+  "separation_pvalue": 0.21988600841278363,
+  "flags": [],
+  "method_agreement": {
+    "hmm_vs_gmm": 0.8831422298121493,
+    "hmm_vs_kmeans": 0.8387411563796048
+  },
+  "event_check": [
+    {
+      "event_date": "2020-02-19",
+      "event_label": "COVID crash onset",
+      "nearest_trading_day": "2020-02-19",
+      "regime": 0
+    },
+    {
+      "event_date": "2022-01-01",
+      "event_label": "2022 rate-hike selloff",
+      "nearest_trading_day": "2021-12-31",
+      "regime": 2
+    }
+  ],
+  "analyst_source": "deterministic",
+  "errors": [
+    "fred_DGS10_failed: Error tokenizing data. C error: Expected 2 fields in line 5, saw 3\n",
+    "fred_DGS2_failed: Error tokenizing data. C error: Expected 2 fields in line 5, saw 3\n",
+    "fred_BAMLH0A0HYM2_failed: Error tokenizing data. C error: Expected 2 fields in line 5, saw 3\n"
+  ]
+}
