@@ -50,4 +50,4 @@ This note describes historical and current statistical regime characteristics on
 
 ---
 
-*Generated automatically by the regime-detection-agent pipeline on 2026-11-26 03:54 UTC. Universe: SPY + XLY, XLP, XLE, XLF, XLV, XLI, XLB, XLK, XLU. This note is end-of-day, backward-looking, and not investment advice.*
+*Generated automatically by the regime-detection-agent pipeline on 2026-11-27 03:54 UTC. Universe: SPY + XLY, XLP, XLE, XLF, XLV, XLI, XLB, XLK, XLU. This note is end-of-day, backward-looking, and not investment advice.*
